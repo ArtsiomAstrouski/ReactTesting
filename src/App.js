@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import { formatUserName } from './utils'
+import { formatUserName } from './components/Untils/untils'
 import './App.css'
 
 function App() {
