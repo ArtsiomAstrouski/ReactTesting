@@ -1,9 +1,12 @@
-import { render } from '@testing-library/react'
+import { render, screen, waitFor } from '@testing-library/react'
 import App from './App'
 
 describe('App component', () => {
-	test('it renders', () => {
+	test('it displays a list of users', async () => {
 		render(<App />)
+
+		const userList = await waitFor(() => screen.getByTestId('user-list'))
+		expect(userList).toBeInTheDocument()
 	})
 })
 
