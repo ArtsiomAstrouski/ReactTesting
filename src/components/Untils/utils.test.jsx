@@ -1,4 +1,4 @@
-import { formatUserName } from './utils'
+import { formatUserName } from './untils'
 
 describe('utils', () => {
 	test('formatUserName adds @ at the beginning of the username', () => {
