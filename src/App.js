@@ -4,7 +4,7 @@ import Home from './components/Home/home'
 import HiddenMessage from './components/HiddenMessage/hiddenMessage'
 import Login from './components/Login/login'
 import Search from './components/Search/search'
-import SearchInput from './components/SearchInput'
+import SearchInput from './components/SearchInput/searchInput'
 
 function App() {
 	return (
