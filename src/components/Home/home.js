@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { formatUserName } from '../Untils/untils'
+import Header from '../Header/header'
 
 function Home() {
 	const [users, setUsers] = useState([])
@@ -26,21 +27,24 @@ function Home() {
 	}, [])
 
 	return (
-		<div className="App">
-			<div>Users:</div>
-			{users.length ? (
-				<ul data-testid="user-list">
-					{users.map(user => (
-						<li key={user.id} className="user" data-testid="user-item">
-							<span>{user.name}</span> (
-							<span>{formatUserName(user.username)}</span>)
-						</li>
-					))}
-				</ul>
-			) : (
-				<div>Loading users...</div>
-			)}
-		</div>
+		<>
+			<Header />
+			<div className="App">
+				<div>Users:</div>
+				{users.length ? (
+					<ul data-testid="user-list">
+						{users.map(user => (
+							<li key={user.id} className="user" data-testid="user-item">
+								<span>{user.name}</span> (
+								<span>{formatUserName(user.username)}</span>)
+							</li>
+						))}
+					</ul>
+				) : (
+					<div>Loading users...</div>
+				)}
+			</div>
+		</>
 	)
 }
 

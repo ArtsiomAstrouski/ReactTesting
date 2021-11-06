@@ -1,9 +1,11 @@
 import * as React from 'react'
+import Header from '../Header/header'
 
 function HiddenMessage({ children }) {
 	const [showMessage, setShowMessage] = React.useState(false)
 	return (
 		<div>
+			<Header />
 			<label htmlFor="toggle">Show Message</label>
 			<input
 				id="toggle"

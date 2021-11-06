@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Header from '../Header/header'
 
 const getUser = () => Promise.resolve({ id: 1, name: 'Yauhen' })
 
@@ -35,6 +36,7 @@ const SearchInput = () => {
 
 	return (
 		<div>
+			<Header />
 			{user && <h2>Logged in as {user.name}</h2>}
 			<img src="" alt="search image" />
 			<Search value={search} onChange={handleChange}>

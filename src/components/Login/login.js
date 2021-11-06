@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Header from '../Header/header'
 
 function Login() {
 	const [state, setState] = React.useReducer((s, a) => ({ ...s, ...a }), {
@@ -35,23 +36,26 @@ function Login() {
 	}
 
 	return (
-		<div>
-			<form onSubmit={handleSubmit}>
-				<div>
-					<label htmlFor="usernameInput">Username</label>
-					<input id="usernameInput" />
-				</div>
-				<div>
-					<label htmlFor="passwordInput">Password</label>
-					<input id="passwordInput" type="password" />
-				</div>
-				<button type="submit">Submit{state.loading ? '...' : null}</button>
-			</form>
-			{state.error ? <div role="alert">{state.error}</div> : null}
-			{state.resolved ? (
-				<div role="alert">Congrats! You're signed in!</div>
-			) : null}
-		</div>
+		<>
+			<Header />
+			<div>
+				<form onSubmit={handleSubmit}>
+					<div>
+						<label htmlFor="usernameInput">Username</label>
+						<input id="usernameInput" />
+					</div>
+					<div>
+						<label htmlFor="passwordInput">Password</label>
+						<input id="passwordInput" type="password" />
+					</div>
+					<button type="submit">Submit{state.loading ? '...' : null}</button>
+				</form>
+				{state.error ? <div role="alert">{state.error}</div> : null}
+				{state.resolved ? (
+					<div role="alert">Congrats! You're signed in!</div>
+				) : null}
+			</div>
+		</>
 	)
 }
 

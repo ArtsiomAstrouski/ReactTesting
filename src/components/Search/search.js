@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Header from '../Header/header'
 
 const Search = ({ value, onChange, children }) => (
 	<div>
@@ -21,13 +22,16 @@ const SearchApp = () => {
 	}
 
 	return (
-		<div>
-			<img src="" alt="search image" />
-			<Search value={search} onChange={handleChange}>
-				SEARCH:
-			</Search>
-			<p>Searches for {search ? search : '...'}</p>
-		</div>
+		<>
+			<Header />
+			<div>
+				<img src="" alt="search image" />
+				<Search value={search} onChange={handleChange}>
+					SEARCH:
+				</Search>
+				<p>Searches for {search ? search : '...'}</p>
+			</div>
+		</>
 	)
 }
 
