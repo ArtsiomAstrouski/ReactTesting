@@ -36,7 +36,7 @@ const Input = () => {
 	return (
 		<div>
 			{user && <h2>Logged in as {user.name}</h2>}
-			<img className="image" src="" alt="search image" />
+			<img className="img" src="" alt="search image" />
 			<Search value={search} onChange={handleChange}>
 				SEARCH:
 			</Search>
