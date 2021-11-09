@@ -17,10 +17,25 @@ const useStyles = makeStyles(theme => ({
 		background: '#242D46',
 		border: '2px solid #000',
 		boxShadow: 24,
-		p: 4,
+		display: 'flex',
+		justifyContent: 'center',
+		flexDirection: 'column',
+		alignItems: 'center',
 	},
 	danger: {
 		opacity: 0.1,
+		animation: `$myEffect 3000ms linear infinite`,
+	},
+	'@keyframes myEffect': {
+		'0%': {
+			opacity: 0.1,
+		},
+		'50%': {
+			opacity: 0.4,
+		},
+		'100%': {
+			opacity: 0.8,
+		},
 	},
 }))
 
@@ -42,7 +57,7 @@ export default function Material() {
 			>
 				<Box className={classes.style}>
 					<Typography id="modal-modal-title" variant="h6" component="h2">
-						Text in a modal
+						Danger
 					</Typography>
 					<Danger className={classes.danger} />
 				</Box>

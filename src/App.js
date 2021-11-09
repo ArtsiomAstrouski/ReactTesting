@@ -1,11 +1,11 @@
 import './App.css'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Home from './components/Home/home'
-import HiddenMessage from './components/HiddenMessage/hiddenMessage'
-import Login from './components/Login/login'
-import Search from './components/Search/search'
-import SearchInput from './components/SearchInput/searchInput'
-import Material from './components/Material/index'
+import Home from './components/Home/'
+import HiddenMessage from './components/HiddenMessage'
+import Login from './components/Login/'
+import Search from './components/Search/'
+import SearchInput from './components/SearchInput/'
+import Material from './components/Material/'
 
 function App() {
 	return (
