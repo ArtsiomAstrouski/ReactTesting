@@ -32,6 +32,11 @@ const Header = () => {
 							SearchInput
 						</Link>
 					</li>
+					<li>
+						<Link className={styles.link} to="/material">
+							Material
+						</Link>
+					</li>
 				</ul>
 			</nav>
 		</header>

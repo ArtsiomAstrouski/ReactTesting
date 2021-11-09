@@ -5,6 +5,7 @@ import HiddenMessage from './components/HiddenMessage/hiddenMessage'
 import Login from './components/Login/login'
 import Search from './components/Search/search'
 import SearchInput from './components/SearchInput/searchInput'
+import Material from './components/Material/index'
 
 function App() {
 	return (
@@ -18,6 +19,11 @@ function App() {
 				/>
 				<Route exact path="/home" render={() => <Home nav={Home} />} />
 				<Route exact path="/login" render={() => <Login nav={Login} />} />
+				<Route
+					exact
+					path="/material"
+					render={() => <Material nav={Material} />}
+				/>
 				<Route exact path="/search" render={() => <Search nav={Search} />} />
 				<Route
 					exact
