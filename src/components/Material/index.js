@@ -6,6 +6,8 @@ import Modal from '@mui/material/Modal'
 import { makeStyles } from '@material-ui/core/styles'
 import Header from '../Header/header'
 import { ReactComponent as Danger } from '../../img/danger.svg'
+import styles from './style.module.css'
+import combineCss from '../../helpers/combine-css'
 
 const useStyles = makeStyles(theme => ({
 	style: {
@@ -59,7 +61,7 @@ export default function Material() {
 					<Typography id="modal-modal-title" variant="h6" component="h2">
 						Danger
 					</Typography>
-					<Danger className={classes.danger} />
+					{/* <Danger className={classes.danger} /> */}
 				</Box>
 			</Modal>
 		</div>
