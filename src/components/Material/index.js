@@ -51,6 +51,29 @@ export default function Material() {
 		<div>
 			<Header />
 			<Button onClick={handleOpen}>Open modal</Button>
+			<div className={styles.body}>
+				<div className={styles.rating}>
+					{Array(10)
+						.fill()
+						.map((_, i) => (
+							<div
+								className={combineCss(styles.ratingUp, styles[`rating-${i}`])}
+							></div>
+						))}
+				</div>
+				<div className={styles.rating2}>
+					{Array(10)
+						.fill()
+						.map((_, i) => (
+							<div
+								className={combineCss(
+									styles.ratingButton,
+									styles[`rating-${i}`]
+								)}
+							></div>
+						))}
+				</div>
+			</div>
 			<Modal
 				open={open}
 				onClose={handleClose}

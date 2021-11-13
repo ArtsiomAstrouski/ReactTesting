@@ -1,0 +1,65 @@
+.body {
+	position: relative;
+	width: 300px;
+}
+.rating {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+}
+
+.rating2 {
+	width: 66%;
+	position: absolute;
+	display: flex;
+	align-items: flex-end;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+.ratingUp {
+	margin: 5px;
+	width: 20px;
+	background-color: #ff0000;
+}
+
+.ratingButton {
+	margin: 5px;
+	min-width: 12.58px;
+	background-color: #999999;
+}
+.rating-1 {
+	height: 6.28px;
+}
+.rating-2 {
+	height: 9.43px;
+}
+.rating-3 {
+	height: 12.58px;
+}
+.rating-4 {
+	height: 15.72px;
+}
+.rating-5 {
+	height: 18.87px;
+}
+.rating-6 {
+	height: 22.01px;
+}
+.rating-7 {
+	height: 25.15px;
+}
+.rating-8 {
+	height: 28.3px;
+}
+.rating-9 {
+	height: 31.44px;
+}
+.rating-10 {
+	height: 34.58px;
+}
