@@ -1,8 +1,8 @@
-.body {
-	position: relative;
-	width: 300px;
-}
 .rating {
+	position: relative;
+	width: 160px;
+}
+.ratingBody {
 	position: absolute;
 	width: 100%;
 	display: flex;
@@ -12,8 +12,8 @@
 	left: 0;
 }
 
-.rating2 {
-	width: 66%;
+.ratingActive {
+	width: 56%;
 	position: absolute;
 	display: flex;
 	align-items: flex-end;
@@ -23,43 +23,43 @@
 }
 
 .ratingUp {
-	margin: 5px;
-	width: 20px;
-	background-color: #ff0000;
+	margin-left: 3.33px;
+	width: 12.58px;
+	background-color: #999999;
 }
 
 .ratingButton {
-	margin: 5px;
+	margin-left: 3.33px;
 	min-width: 12.58px;
-	background-color: #999999;
+	background-color: #ff0000;
 }
-.rating-1 {
+.item-1 {
 	height: 6.28px;
 }
-.rating-2 {
+.item-2 {
 	height: 9.43px;
 }
-.rating-3 {
+.item-3 {
 	height: 12.58px;
 }
-.rating-4 {
+.item-4 {
 	height: 15.72px;
 }
-.rating-5 {
+.item-5 {
 	height: 18.87px;
 }
-.rating-6 {
+.item-6 {
 	height: 22.01px;
 }
-.rating-7 {
+.item-7 {
 	height: 25.15px;
 }
-.rating-8 {
+.item-8 {
 	height: 28.3px;
 }
-.rating-9 {
+.item-9 {
 	height: 31.44px;
 }
-.rating-10 {
+.item-10 {
 	height: 34.58px;
 }

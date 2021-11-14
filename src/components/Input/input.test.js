@@ -1,7 +1,7 @@
 import React from 'react'
 import { render, screen, fireEvent } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import Input from './input'
+import Input from './index'
 
 describe('Input', () => {
 	test('renders Input component', async () => {

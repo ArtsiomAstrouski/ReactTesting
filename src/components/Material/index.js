@@ -15,7 +15,8 @@ const useStyles = makeStyles(theme => ({
 		top: '50%',
 		left: '50%',
 		transform: 'translate(-50%, -50%)',
-		width: 400,
+		width: 700,
+		height: 500,
 		background: '#242D46',
 		border: '2px solid #000',
 		boxShadow: 24,
@@ -51,29 +52,6 @@ export default function Material() {
 		<div>
 			<Header />
 			<Button onClick={handleOpen}>Open modal</Button>
-			<div className={styles.body}>
-				<div className={styles.rating}>
-					{Array(10)
-						.fill()
-						.map((_, i) => (
-							<div
-								className={combineCss(styles.ratingUp, styles[`rating-${i}`])}
-							></div>
-						))}
-				</div>
-				<div className={styles.rating2}>
-					{Array(10)
-						.fill()
-						.map((_, i) => (
-							<div
-								className={combineCss(
-									styles.ratingButton,
-									styles[`rating-${i}`]
-								)}
-							></div>
-						))}
-				</div>
-			</div>
 			<Modal
 				open={open}
 				onClose={handleClose}
@@ -84,7 +62,30 @@ export default function Material() {
 					<Typography id="modal-modal-title" variant="h6" component="h2">
 						Danger
 					</Typography>
-					{/* <Danger className={classes.danger} /> */}
+					<Danger className={classes.danger} />
+					<div className={styles.rating}>
+						<div className={styles.ratingBody}>
+							{Array(10)
+								.fill()
+								.map((_, i) => (
+									<div
+										className={combineCss(styles.ratingUp, styles[`item-${i}`])}
+									></div>
+								))}
+						</div>
+						<div className={styles.ratingActive}>
+							{Array(10)
+								.fill()
+								.map((_, i) => (
+									<div
+										className={combineCss(
+											styles.ratingButton,
+											styles[`item-${i}`]
+										)}
+									></div>
+								))}
+						</div>
+					</div>
 				</Box>
 			</Modal>
 		</div>

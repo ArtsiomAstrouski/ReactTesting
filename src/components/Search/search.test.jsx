@@ -1,10 +1,10 @@
 import React from 'react'
 import { render, screen } from '@testing-library/react'
-import App from './App'
+import SearchApp from './index'
 
 describe('App', () => {
 	it('renders App component', () => {
-		render(<App />)
+		render(<SearchApp />)
 		expect(screen.getByText(/Search:/i)).toBeInTheDocument()
 		expect(screen.getByRole('textbox')).toBeInTheDocument()
 		expect(screen.getByLabelText(/search/i)).toBeInTheDocument()
