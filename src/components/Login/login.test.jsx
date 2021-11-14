@@ -1,6 +1,6 @@
 import { setupServer } from 'msw/node'
 import { render, fireEvent, screen } from '@testing-library/react'
-import Login from '../login'
+import Login from './index'
 
 const fakeUserResponse = { token: 'fake_user_token' }
 const server = setupServer(

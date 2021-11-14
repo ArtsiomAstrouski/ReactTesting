@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, screen, fireEvent } from '@testing-library/react'
-import SearchInput from './searchInput'
+import SearchInput from './index'
 
 describe('SearchInput', () => {
 	test('renders SearchInput component', async () => {
