@@ -33,6 +33,16 @@ const Header = () => {
 						</Link>
 					</li>
 					<li>
+						<Link className={styles.link} to="/input">
+							Input
+						</Link>
+					</li>
+					<li>
+						<Link className={styles.link} to="/scrolling">
+							Scrolling
+						</Link>
+					</li>
+					<li>
 						<Link className={styles.link} to="/material">
 							Material
 						</Link>

@@ -6,6 +6,8 @@ import Login from './components/Login/'
 import Search from './components/Search/'
 import SearchInput from './components/SearchInput/'
 import Material from './components/Material/'
+import Input from './components/Input'
+import Scrolling from './components/Scrolling'
 
 function App() {
 	return (
@@ -24,7 +26,13 @@ function App() {
 					path="/material"
 					render={() => <Material nav={Material} />}
 				/>
+				<Route exact path="/input" render={() => <Input nav={Input} />} />
 				<Route exact path="/search" render={() => <Search nav={Search} />} />
+				<Route
+					exact
+					path="/scrolling"
+					render={() => <Scrolling nav={Scrolling} />}
+				/>
 				<Route
 					exact
 					path="/searchinput"
